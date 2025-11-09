@@ -1,9 +1,8 @@
 import tkinter as ktt
 import random
-import time as ti
 s = ktt.Tk()
 secrast = random.randint(1,10)
-def hjrdbjhxgtjhvsdfgtjtgfjdmhjsktjukimgurdktuysksri():
+def RandomNumber():
     global secrast
     num = int(entry.get())
     if num < secrast:
@@ -16,7 +15,7 @@ def hjrdbjhxgtjhvsdfgtjtgfjdmhjsktjukimgurdktuysksri():
         return secrast
 entry = ktt.Entry(s)
 lable = ktt.Label(s,text="1 до 10",font=("Arial",18))
-button = ktt.Button(s,text="перевірити",font=("Arial",18),command=hjrdbjhxgtjhvsdfgtjtgfjdmhjsktjukimgurdktuysksri)
+button = ktt.Button(s,text="перевірити",font=("Arial",18),command=RandomNumber)
 lable.pack()
 entry.pack()
 button.pack()
